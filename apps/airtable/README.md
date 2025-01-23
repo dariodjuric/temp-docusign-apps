@@ -33,4 +33,3 @@ To generate a manifest to upload to Docusign, run `npm run generate-manifest`. T
 ## API Routes
 
 All the code is in the app/api directory. Keep all code related to a specific app in its own directory. The shareable code should be specific types and utilities. These can be put the in the `src` directory.
-sdfsd
