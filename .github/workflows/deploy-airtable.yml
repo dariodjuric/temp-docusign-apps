@@ -1,0 +1,21 @@
+name: Deploy Airtable to Vercel
+
+on:
+  push:
+    paths:
+      - 'apps/airtable/**'
+  workflow_dispatch:
+
+env:
+  VERCEL_WEBHOOK_URL: https://your-vercel-webhook-url
+
+jobs:
+  trigger-vercel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Vercel Webhook
+        run: |
+          curl -X POST \
+            -H "Content-Type: application/json" \
+            -d '{}' \
+            $VERCEL_WEBHOOK_URL
