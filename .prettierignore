@@ -1,5 +1,7 @@
 # Add files here to ignore them from prettier formatting
 
-/dist
-/.manifest-out
-
+**/dist
+**/.manifest-out
+**/node_modules
+**/package-lock.json
+**/.next
